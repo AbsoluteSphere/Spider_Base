@@ -1,0 +1,17 @@
+
+https://pcw-api.iqiyi.com/search/recommend/list?channel_id=2&data_type=1&mode=11&page_id=2&ret_num=48&session=2c0d9819411010e4c4edbec03ae2333f&three_category_id=15;must
+http
+请求行
+
+请求头
+
+请求体
+data   post 才有
+
+
+
+requests 发送请求  携带网址
+请求参数  携带的方式  2种
+直接放在网址里面
+params关键传递这个查询字符串参数  
+

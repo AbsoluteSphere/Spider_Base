@@ -1,0 +1,31 @@
+
+url   网址  统一资源定位符
+https://www.baidu.com/s?wd=%E5%9B%BE%E7%89%87&base_query=%E5%9B%BE%E7%89%87&pn=0&oq=%E5%9B%BE%E7%89%87&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c43ab5ce0000dfd7&rsv_t=0a4dBhvMszZhuXsGJMG54BlKv99VrJ61sgn2uYegOm40Asxr4ftU%2B0FZ%2FtE
+http://ip:port/资源路径?查询关键字 # 锚点
+http/https
+协议:当前网页的请求协议
+
+www.baidu.com
+域名:  www.baidu.com   本质上是ip  地址    网警   http://112.80.248.76:
+
+http://112.80.248.76:80
+端口:  一般可以省略
+
+
+
+
+
+域名后面   问号前面
+资源地址:
+
+问号后面
+查询参数: 条件    wd=图片&base_query=图片&
+
+锚点: 打开这个网址之后  定位到的位置
+
+
+http:// 湖南.长沙/岳麓区/兴工国际产业园/14栋/2楼?帅=是
+
+socket发送https请求  有问题  需要给socket创建ssl安全证书
+网站为了保证兼容性问题  会开放80端口
+
