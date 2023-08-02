@@ -26,16 +26,19 @@ async def get_Data(client, i):
 async def main():
     # async with 声明一个异步的上下文管理器,让程序自动分配和释放资源
     # aiohttp.ClientSession 和 requests.session() 类似
+    # 创建连接对象client
     async with aiohttp.ClientSession() as client:
         task_list = []
         for i in range(30):
             # 调用异步函数  会返回协程对象
             res = get_Data(client, i)
             # print(res)
-            # 装换成task对象
+            # 协程对象转换成task对象
             task = asyncio.create_task(res)
             task_list.append(task)
             # await get_Data(client, i)
+        # task任务批量提交 done是结果 pending是状态
+        # wait可以接收一个迭代对象并将迭代对象中的元素提交给事件循环 并且可以获取被提交的任务的运行状态
         done, pending = await asyncio.wait(task_list)
         # print(done, pending)
         # for i in done:

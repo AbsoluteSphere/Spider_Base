@@ -57,6 +57,7 @@ class Aqyi():
 
     def main(self):
         t_list = []
+        # 线程传的是个引用地址，不是调用，不要()
         t_url = threading.Thread(target=self.get_url)
         t_list.append(t_url)
         for i in range(3):

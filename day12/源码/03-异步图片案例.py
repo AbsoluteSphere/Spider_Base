@@ -28,11 +28,12 @@ class wZRY():
         }
 
     async def get_Data(self, client, ename, cname):
-        for i in range(1, 30):
+        for i in range(1, 4):
             print(self.skin_url.format(ename, ename, i))
             res = await client.get(self.skin_url.format(ename, ename, i), headers=self.headers)
             if res.status == 200:
                 content = await res.read()
+                # print(content)
                 with open('wzry/' + cname + '-' + str(i) + '.jpg', 'wb')as f:
                     f.write(content)
                     print('正在下载{}第{}张图片'.format(cname, i))
