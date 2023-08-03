@@ -54,6 +54,7 @@ class Qiche():
         # print(len(li_list))
         tasks = []
         for id in li_list:
+            # 原本保存数据是await self.info_get(id, client, pool),但是这里每个请求都是独立的,把它们额外放入事件循环中
             res = self.info_get(id, client, pool)
             task = asyncio.create_task(res)
             tasks.append(task)
