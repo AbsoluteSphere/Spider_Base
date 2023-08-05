@@ -1,0 +1,14 @@
+
+data = {
+'https://180.119.93.6:12354'
+'http://180.119.93.6:12354'
+}
+
+
+亚马逊
+    所有分类的地址
+    https://www.amazon.cn/nav/ajax/hamburgerMainContent?ajaxTemplate=hamburgerMainContent&pageType=Gateway&hmDataAjaxHint=1&navDeviceType=desktop&isSmile=0&isPrime=0&isBackup=false&hashCustomerAndSessionId=a098570a705d7c64166746f75af46e4c58d40e75&languageCode=zh_CN&environmentVFI=AmazonNavigationCards%2Fdevelopment%40B6135401680-AL2_x86_64&secondLayerTreeName=apparel_shoes%2Bcomputer_office%2Bhome_kitchen%2Bbeauty_pca%2Bkindle_ebook%2Bsports_outdoor%2Bgrocery%2Bbaby_toy%2Bphones_elec%2Bjewelry_watch%2Bhome_improvement%2Bvideo_game%2Bmusical_instrument%2Bcamera&customerCountryCode=null
+    子级分类网址
+    https://www.amazon.cn/s?rh=n%3A116169071&page=2
+    https://www.amazon.cn/s?rh=n%3A399831071&page=2
+    获取到所有的分类 --> 子级页面的网址 -->  取出总共的页数 --> 获取到详情页面的a标签-->提取详情页面的标题,价格,分类,网址
